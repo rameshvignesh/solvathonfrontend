@@ -1,0 +1,28 @@
+<div class="main">
+    <div class="jumbtron">
+        <h1 class="display-4 text-center">KYC Status</h1>
+    
+    </div>
+    
+    <form  class="form1" (submit)="resetpassword()" autocomplete="off"  >
+       
+        <div>
+            <input type="text" name="UserID"  class="un" placeholder="Enter Aadhar Number" required pattern="\d{12}">
+            <!-- <div class="validation-error" style="color:red" *ngIf="Account_Number.invalid && Account_Number.touched">This field is required</div> -->
+        </div>
+    
+        <div>
+            <button type="submit"   class="submit">Proceed</button>
+        </div>
+    
+    </form>
+    <form class="form1" >
+        <div>
+            <input type="number" name="Otp"   placeholder="Enter OTP" class="un" required>
+          <div style="color:red"></div>
+        </div>
+        <div>
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </form>
+  </div>
